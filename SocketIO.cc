@@ -6,19 +6,42 @@
 
 namespace wd{
 
+//读取包，保存type、length、value原始数据，返回总长度-------------------------------
+int SocketIO::readPacket(Packet & packet){
+    //TLV:type(4B)|length(4B)|value= 8 + 数据长度
+    int type, length;
+    readn((char*)&type,sizeof(type));       //根据长度进行接收type
+    readn((char*)&length,sizeof(length));   //根据长度进行接收length
+
+    if(length > 0){
+        char * pbuf = new char[length + 1]();   //new一个数组
+        int ret = readn(pbuf,length);           //接收value
+
+        packet.type = type;
+        packet.length = length;
+        packet.msg.assign(pbuf,length);   //length个字节的数据，保存到packet中msg字段中
+
+        delete [] pbuf;                   //new和delete对应，释放数组空间
+        return ret + 8;                   //整个TLV的大小
+    }
+
+    return 8;
+}
+
 //读数据-------------------------
 int SocketIO::readn(char * buff,int len){
     int left = len;
     char * pbuf = buff;
 
+    //left= 0退出循环
     while(left > 0){
-        int ret = recv(_fd,pbuf,left,0);
+        int ret = recv(_fd,pbuf,left,0);  //接收数据
 
         if(ret == -1 && errno == EINTR){ //受信号中断影响
             continue;
         }else if(ret == -1){            //错误情况
             perror("recv");
-            return ret;
+            return ret;                //还是len - left?
         }else if(ret == 0){             //超时
             return len - left;
         }else{                           //正常
@@ -27,7 +50,7 @@ int SocketIO::readn(char * buff,int len){
         }//if-else if
     }//while
 
-    return len;
+    return len - left;    //?
 }
 
 //发送数据------------------------
@@ -38,16 +61,18 @@ int SocketIO::sendn(const char * buff,int len){
     while(left > 0){
         int ret = send(_fd,pbuf,left,0);
 
-        if(ret < 0){       //出错
+        if(ret == -1 && errno == EINTR){
+            continue;
+        }else if(ret < 0){       //出错
             perror("send");
-            return ret;
+            return ret;            //还是len - left ?
         }else{            //正常
             left -= ret;  //长度减少
             pbuf += ret;  //容量空间变大
         }//if-else
     }//while
 
-    return len;
+    return len - left;
 }
 
 //读取一行，              最大接收长度

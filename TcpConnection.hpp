@@ -18,7 +18,7 @@ class TcpConnection;     //?
 using TcpConnectionPtr=shared_ptr<TcpConnection>;
 using TcpConnectionCallback=function<void(TcpConnectionPtr)>;
 
-//                  继承          共享指针类
+//                  继承辅助类          使用这个函数
 class TcpConnection :public std::enable_shared_from_this<TcpConnection>
 {
 public:
@@ -41,11 +41,17 @@ public:
     //接收数据
     string receive();
 
+    //读包----------------------------------------------------8.13
+    int readPacket(Packet & packet);
+
     //发送数据
     void send(const string & msg);
 
     //在循环中发送
     void sendInLoop(const string & msg);
+
+    //用于处理TLV 解析------------------------------------------
+    void sendInLoop(const TLV & data);           
 
     //判断是否关闭
     bool isClosed() const;
@@ -67,16 +73,18 @@ public:
 
 private:
     //获取本地地址
-    InetAddress getLocalAddress();
+    InetAddress getLocalAddress(int fd);
 
     //获取对端地址
-    InetAddress getPeerAddress();
+    InetAddress getPeerAddress(int fd);
 
 private:
     Socket      _sock;
     SocketIO    _sockIO;
+
     InetAddress _localAddr;
     InetAddress _peerAddr;
+    bool        _isShutdwonWrite;    //是否要主动关闭连接  
     EventLoop * _loop;
 
     //回调函数
