@@ -14,8 +14,7 @@ using std::cout;
 using std::endl;
 using std::string;
 
-using namespace log4cpp;
-
+using namespace  wd;
 Mylogger * Mylogger::_pInstance = nullptr;  //指针初始化
 Mylogger::AutoRelease Mylogger::_ar;        //自动释放对象
 
@@ -26,24 +25,26 @@ Mylogger::Mylogger()
     cout << "Mylogger()" << endl;
 
     //1.创建日志布局对象------------------------------------------
-    auto ptn1 = new PatternLayout();            
+    auto ptn1 = new log4cpp::PatternLayout();            
     ptn1->setConversionPattern("%d %c [%p] %m%n");
 
-    auto ptn2 = new PatternLayout();
+    auto ptn2 = new log4cpp::PatternLayout();
+
     ptn2->setConversionPattern("%d %c [%p] %m%n");
 
     //2.创建日志目的地对象-----------------------------------------
-    auto pOsAppender = new OstreamAppender("console",&cout);
+    auto pOsAppender = new log4cpp::OstreamAppender("console",&cout);
+
     pOsAppender->setLayout(ptn1);
 
     //                  配置文件类      指针          存放配置信息的map 根据log_file查找
     string logfile = wd::Configuration::getInstance()->getConfigMap()["log_file"];  
     cout << "set log file:" <<logfile << endl;
-    auto pFileAppender = new FileAppender("FileAppender",logfile);
+    auto pFileAppender = new log4cpp::FileAppender("FileAppender",logfile);
     pFileAppender->setLayout(ptn2);
 
     //3.设置Category对象------------------
-    _cat.setPriority(Priority::DEBUG);    //设置日志记录器，最低日志级别=debug
+    _cat.setPriority(log4cpp::Priority::DEBUG);    //设置日志记录器，最低日志级别=debug
     _cat.addAppender(pOsAppender);        //将控制台输出目标，添加到日志记录器中
     _cat.addAppender(pFileAppender);      //写入文件
 }
@@ -51,7 +52,7 @@ Mylogger::Mylogger()
 //析构函数
 Mylogger::~Mylogger(){
     cout << "~Mylogger" <<endl;
-    Category::shutdown();       //回收日志布局，目的地-堆对象
+    log4cpp::Category::shutdown();       //回收日志布局，目的地-堆对象
 }
 
     //报错------------------------------------------
@@ -72,9 +73,6 @@ void Mylogger:: debug(const char * msg){
 
     //信息-------------------------------------------
 void Mylogger::info(const char * msg){
-    _cat.debug(msg);
+    _cat.info(msg);
 }
-
-
-
 
