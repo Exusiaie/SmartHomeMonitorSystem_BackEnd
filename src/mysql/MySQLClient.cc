@@ -1,11 +1,11 @@
 #include "MySQLClient.hpp"
+#include "MyLogger.hpp"
 #include <iostream>
 #include <stdexcept>
 using std::string;
 using std::cout;
 using std::endl;
 namespace wd {
-
 /**
  * @brief 构造函数实现
  * 
@@ -42,7 +42,8 @@ MySQLClient::~MySQLClient() {
 bool MySQLClient::connect(const std::string& host, unsigned short port,
                          const std::string& user, const std::string& passwd,
                          const std::string& db) {
-    
+    LogDebug("Connecting to database: %s@%s:%d/%s", 
+             user.c_str(), host.c_str(), port, db.c_str());
     MYSQL * pconn = mysql_real_connect(&_conn, host.c_str(),
                                        user.c_str(), 
                                        passwd.c_str(),
@@ -52,8 +53,11 @@ bool MySQLClient::connect(const std::string& host, unsigned short port,
                                        0);
     if(!pconn)
     {
+        LogError("Database connection failed: (%d) %s", 
+                mysql_errno(&_conn), mysql_error(&_conn));
         return false;
     }
+    LogInfo("Database connected successfully");
     return true;
 }
 
@@ -66,15 +70,16 @@ bool MySQLClient::connect(const std::string& host, unsigned short port,
  * @return 执行成功返回true，失败返回false
  */
 bool MySQLClient::writeOperation(const std::string& sql) {
+    LogDebug("Executing write operation: %s", sql.c_str());
     int ret = mysql_real_query(&_conn, sql.c_str(), sql.size());
     if(ret != 0){
-        //此处改为日志
-        printf("(%d, %s)\n", mysql_errno(&_conn), mysql_error(&_conn));
+         LogError("Write operation failed: (%d) %s", 
+                mysql_errno(&_conn), mysql_error(&_conn));
         return false;
     }else{
     //此处改为日志
-    printf("Query OK, %ld row(s) affected.\n",mysql_affected_rows(&_conn));
-    return true;
+        LogInfo("Write operation affected %lld rows", mysql_affected_rows(&_conn));
+        return true;
     }
 }
 
@@ -91,11 +96,13 @@ bool MySQLClient::writeOperation(const std::string& sql) {
  * @exception std::runtime_error 查询失败或结果处理失败时抛出
  */
 std::vector<std::vector<std::string>> MySQLClient::readOperation(const std::string& sql) {
+    LogDebug("Executing read operation: %s", sql.c_str());
     // 执行SQL查询
     int ret = mysql_real_query(&_conn, sql.c_str(), sql.size());
     if(ret != 0){
         //此处改为日志
-        throw std::runtime_error("Query failed: " + std::string(mysql_error(&_conn)));
+    LogError("Read operation failed: (%d) %s", 
+                mysql_errno(&_conn), mysql_error(&_conn));
     }
 
     // 使用unique_ptr管理结果集资源，确保异常安全
@@ -105,8 +112,8 @@ std::vector<std::vector<std::string>> MySQLClient::readOperation(const std::stri
     // 检查结果集有效性
     if (!res) {
         //此处改为日志
-        throw std::runtime_error("Store result failed: " + 
-                                std::string(mysql_error(&_conn)));
+        LogError("Failed to store result: (%d) %s",
+                mysql_errno(&_conn), mysql_error(&_conn));
     }
 
     std::vector<std::vector<std::string>> results;

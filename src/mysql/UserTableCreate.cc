@@ -1,4 +1,5 @@
 #include "UserTableCreate.hpp"
+#include "MyLogger.hpp"
 #include <string>
 #include <stdexcept>//临时
  using std::string;
@@ -6,7 +7,8 @@
  namespace wd{
 
  bool UserTableCreator::createTable(MySQLClient& db) {
-    const string sql = R"(
+     LogInfo("Creating user table...");
+     const string sql = R"(
         CREATE TABLE IF NOT EXISTS users (
             id INT AUTO_INCREMENT PRIMARY KEY,
             name VARCHAR(20) UNIQUE NOT NULL,
@@ -14,11 +16,24 @@
             encrypt CHAR(64) NOT NULL
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
     )";
-     return db.writeOperation(sql);
+     bool result =  db.writeOperation(sql);
+     if(result) {
+        LogInfo("User table created successfully");
+    } else {
+        LogError("Failed to create user table");
+    }
+    return result;
      }
 bool UserTableCreator::dropTable(MySQLClient& db) {
-   const std::string sql = "DROP TABLE IF EXISTS users";
-    return db.writeOperation(sql);
+    LogInfo("Dropping user table...");
+    const std::string sql = "DROP TABLE IF EXISTS users";
+    bool result = db.writeOperation(sql);
+     if(result) {
+        LogInfo("User table dropped successfully");
+    } else {
+        LogError("Failed to drop user table");
+    }
+    return result;
 }
 
 bool UserTableCreator::tableExists(MySQLClient& db) {
@@ -31,8 +46,9 @@ bool UserTableCreator::tableExists(MySQLClient& db) {
         )";
         
         auto result = db.readOperation(sql);
-        return result.size() > 1; // 存在数据行
+        return result.size() > 0; // 存在数据行
     } catch (const std::exception& e) {
+        LogError("Table existence check failed: %s", e.what());
         return false;
     }
 }

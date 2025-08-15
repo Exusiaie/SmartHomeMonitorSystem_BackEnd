@@ -1,0 +1,23 @@
+2025-08-15 14:54:01,778 wd [INFO] [test_user_auth.cc:main:Starting user authentication test...
+2025-08-15 14:54:01,779 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-15 14:54:01,807 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-15 14:54:01,807 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-15 14:54:01,808 wd [INFO] [test_user_auth.cc:main:===== Testing Login =====
+2025-08-15 14:54:01,808 wd [INFO] [UserLoginService.cc:Userloginservice:Database config: host=127.168.23.128, port=3306, user=root, db=school
+2025-08-15 14:54:01,808 wd [INFO] [UserLoginService.cc:loginStage1:Login Stage1 started for: test_user
+2025-08-15 14:54:01,808 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-15 14:54:01,832 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-15 14:54:01,832 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_user'
+2025-08-15 14:54:01,833 wd [INFO] [test_user_auth.cc:main:Retrieved setting from service: $1$M4VXGy3ftkSowpIT$
+2025-08-15 14:54:01,834 wd [INFO] [UserLoginService.cc:loginStage2:Login Stage2 started for: test_user
+2025-08-15 14:54:01,834 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-15 14:54:01,858 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-15 14:54:01,858 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_user'
+2025-08-15 14:54:01,859 wd [INFO] [UserLoginService.cc:loginStage2:Login successful for: test_user
+2025-08-15 14:54:01,859 wd [INFO] [test_user_auth.cc:main:User logged in successfully
+2025-08-15 14:54:01,859 wd [INFO] [test_user_auth.cc:main:===== Login test completed successfully =====
