@@ -1,11 +1,11 @@
 #ifndef _WD_MYLOGGER_H_ 
 #define _WD_MYLOGGER_H_
 
+#include "Configuration.hpp"
 #include <log4cpp/Category.hh>        //日志记录，核心功能
-
 using std::cout;
 using std::endl;
-
+namespace wd{
 class Mylogger{
 
     //自动释放类---------------------------------------
@@ -82,21 +82,22 @@ private:
 
 private:
     static Mylogger * _pInstance;   //日志指针
-    log4cpp::Category & _cat;       //？
+    log4cpp::Category& _cat;       //？
     static AutoRelease _ar;         //自动释放
 };//class Mylogger
   
 //统一格式，宏
 #define addprefix(msg) string("[")\
-       .append(_FILE_).append(":")\
-       .append(_func_).append(":")\
+       .append(__FILE__).append(":")\
+       .append(__func__).append(":")\
        .append(msg).c_str()
 
 //快捷宏，四个日志级别                                为日志消息添加统一前缀    可变参数，格式化日志
-#define LogInfo(msg,...) Mylogger::getInstance()->info(addprefix(msg),##_VA_ARGS_)
-#define LogError(msg,...) Mylogger::getInstance()->error(addprefix(msg),##_VA_ARGS_)
-#define LogWarn(msg,...) Mylogger::getInstance()->warn(addprefix(msg),##_VA_ARGS_)
-#define LogDebug(msg,...) Mylogger::getInstance()->debug(addprefix(msg),##_VA_ARGS_)
-
+#define LogInfo(msg,...) Mylogger::getInstance()->info(addprefix(msg),##__VA_ARGS__)
+#define LogError(msg,...) Mylogger::getInstance()->error(addprefix(msg),##__VA_ARGS__)
+#define LogWarn(msg,...) Mylogger::getInstance()->warn(addprefix(msg),##__VA_ARGS__)
+#define LogDebug(msg,...) Mylogger::getInstance()->debug(addprefix(msg),##__VA_ARGS__)
+}
 #endif
+
 

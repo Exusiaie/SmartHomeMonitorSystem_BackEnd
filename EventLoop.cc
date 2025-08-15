@@ -44,7 +44,7 @@ void EventLoop::unloop(){
 void EventLoop::runInLoop(Functor && cb){
     {
         MutexLockGuard autolock(_mutex);  //自动锁
-        _pendingFunctors.push_back(cb);   //放入vector中
+        _pendingFunctors.push_back(cb);   //放入准备函数，vector中
     }
 
     wakeup();   //通知IO线程发送数据
@@ -54,24 +54,24 @@ void EventLoop::runInLoop(Functor && cb){
 void EventLoop::waitEpollFd(){
     int nready = epoll_wait(_epfd,_evtArr.data(),_evtArr.size(),5000);
 
-    if(nready == -1 && errno == EINTR){
+    if(nready == -1 && errno == EINTR){   //软中断错误？
         return;
-    }else if(nready == -1){
+    }else if(nready == -1){               //错误
         perror("epoll_wait");
         exit(EXIT_FAILURE);
-    }else if(nready == 0){
+    }else if(nready == 0){                //超时
         printf("epoll timeout\n");
-    }else{
+    }else{                                //正常
         for(int i = 0;i < nready;++i){
             int fd = _evtArr[i].data.fd;
 
-            if(fd == _acceptor.fd()){
-                handleNewConnection();
-            }else if(fd == _eventfd){
-                handleReadEvent();
-                doPendingFunctors();
-            }else{
-                handleMessage(fd);
+            if(fd == _acceptor.fd()){    //当前fd和新建fd相同
+                handleNewConnection();   //新建连接,
+            }else if(fd == _eventfd){    //?
+                handleReadEvent();       //读操作
+                doPendingFunctors();     //进行消息的发送
+            }else{  
+                handleMessage(fd);      //已经建立好的连接
             }//if-else if
         }//for
     }//if-else if

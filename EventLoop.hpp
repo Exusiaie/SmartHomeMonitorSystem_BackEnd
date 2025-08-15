@@ -18,7 +18,7 @@ namespace wd{
 class TcpConnection;
 using TcpConnectionPtr= shared_ptr<TcpConnection>;           //智能指针
 using TcpConnectionCallback=function<void(TcpConnectionPtr)>;//回调函数？
-using Function=function<void()>;                             //?
+using Functor=std::function<void()>;                         //通用函数封装器，存储任意可调用函数
 
 class Acceptor;
 

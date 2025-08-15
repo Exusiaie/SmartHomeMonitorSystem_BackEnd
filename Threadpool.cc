@@ -1,10 +1,8 @@
 #include "Threadpool.hpp"
-//#include <unistd.h>
-//#include <stdio.h>
+#include <unistd.h>
+#include <stdio.h>
 
 namespace wd{
-
-class Threadpool{
 
 //构造函数
 Threadpool::Threadpool(int threadNum,int queSize)
@@ -20,7 +18,7 @@ Threadpool::Threadpool(int threadNum,int queSize)
 //开启线程的运行---------------------------------------------------------------
 void Threadpool::start(){
     //创建线程------------------------
-    for(int i = 0;i < _threadNum;++i){
+    for(int i = 0;i < _threadNum;++i){   //根据传过来的线程数
         //创建N个子线程对象，线程池的doTask方法注册给线程对象
         unique_ptr<Thread> up(new Thread(std::bind(&Threadpool::doTask,this)));
         //up是左值，转换成右值，存入vector中
@@ -29,15 +27,15 @@ void Threadpool::start(){
 
     //让每一个子线程运行起来----------
     for(auto & pthread : _threads){
-        pthread->start();
+        pthread->start();           //vector里的每个子线程，都开始
     }
 }
 
 //停止线程池的运行--------------------------------------------------------------
 void Threadpool::stop(){
     //任务队列非空，不退出，等待任务执行完毕
-    while(!_taskque.empty()){
-        sleep(1);
+    while(!_taskque.empty()){    
+        usleep(100);
     }
 
     _isExit = true;   //修改退出的标志位
@@ -46,21 +44,21 @@ void Threadpool::stop(){
 
     //要回收每一个子线程
     for(auto & pthread : _threads){
-        pthread->join();
+        pthread->join();            //?
     }
 }
 
-//Task函数对象，右值引用来表示
+//Task函数对象，右值引用来表示------------------------
 void Threadpool::addTask(Task && task){
     if(task){
         _taskque.push(std::move(task)); //存入任务队列
     }
 }
     
-//子线程要执行的过程
+//子线程要执行的过程------------------------------------
 void Threadpool::doTask(){
-    while(!_isExit){
-        Task task = _taskque.pop();
+    while(!_isExit){       //不存在false,取反=true
+        Task task = _taskque.pop();   //任务队列出队一个数据
 
         if(task){
             task();   //执行任务
@@ -71,5 +69,5 @@ void Threadpool::doTask(){
     }//while
 }
 
-}
+}//namespace
 
