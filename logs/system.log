@@ -1,0 +1,2149 @@
+2025-08-15 14:54:01,778 wd [INFO] [test_user_auth.cc:main:Starting user authentication test...
+2025-08-15 14:54:01,779 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-15 14:54:01,807 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-15 14:54:01,807 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-15 14:54:01,808 wd [INFO] [test_user_auth.cc:main:===== Testing Login =====
+2025-08-15 14:54:01,808 wd [INFO] [UserLoginService.cc:Userloginservice:Database config: host=127.168.23.128, port=3306, user=root, db=school
+2025-08-15 14:54:01,808 wd [INFO] [UserLoginService.cc:loginStage1:Login Stage1 started for: test_user
+2025-08-15 14:54:01,808 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-15 14:54:01,832 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-15 14:54:01,832 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_user'
+2025-08-15 14:54:01,833 wd [INFO] [test_user_auth.cc:main:Retrieved setting from service: $1$M4VXGy3ftkSowpIT$
+2025-08-15 14:54:01,834 wd [INFO] [UserLoginService.cc:loginStage2:Login Stage2 started for: test_user
+2025-08-15 14:54:01,834 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-15 14:54:01,858 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-15 14:54:01,858 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_user'
+2025-08-15 14:54:01,859 wd [INFO] [UserLoginService.cc:loginStage2:Login successful for: test_user
+2025-08-15 14:54:01,859 wd [INFO] [test_user_auth.cc:main:User logged in successfully
+2025-08-15 14:54:01,859 wd [INFO] [test_user_auth.cc:main:===== Login test completed successfully =====
+2025-08-16 12:01:18,323 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 12:01:18,323 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 12:01:18,324 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 12:01:18,359 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 12:01:18,359 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 12:01:18,368 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 12:11:18,785 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 12:11:18,785 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 12:11:18,786 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 12:11:18,812 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 12:11:18,813 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 12:11:18,815 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 12:11:41,852 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:58696 has connected.
+
+2025-08-16 12:12:36,793 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 12:12:36,793 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 12:12:36,794 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 12:12:36,821 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 12:12:36,821 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 12:12:36,823 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 12:13:07,302 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:45196 has connected.
+
+2025-08-16 12:13:31,922 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 12:13:31,922 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 12:13:31,923 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 12:13:31,951 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 12:13:31,952 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 12:13:31,953 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 12:13:36,618 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:59326 has connected.
+
+2025-08-16 12:16:15,988 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 12:16:15,988 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 12:16:15,990 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 12:16:16,024 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 12:16:16,024 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 12:16:16,028 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 12:16:33,884 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:43958 has connected.
+
+2025-08-16 12:17:32,545 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 12:17:32,545 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 12:17:32,546 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 12:17:32,572 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 12:17:32,573 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 12:17:32,575 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 12:25:32,540 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 12:25:32,540 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 12:25:32,541 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 12:25:32,567 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 12:25:32,568 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 12:25:32,570 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 12:25:35,956 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:57478 has connected.
+
+2025-08-16 12:29:19,876 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 12:29:19,876 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 12:29:19,877 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 12:29:19,906 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 12:29:19,906 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 12:29:19,908 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 12:31:46,739 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:53426 has connected.
+
+2025-08-16 12:34:36,794 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 12:34:36,795 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 12:34:36,796 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 12:34:36,823 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 12:34:36,823 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 12:34:36,826 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 12:34:42,603 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:57860 has connected.
+
+2025-08-16 12:37:38,314 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 12:37:38,314 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 12:37:38,315 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 12:37:38,343 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 12:37:38,343 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 12:37:38,346 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 12:37:56,974 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:37160 has connected.
+
+2025-08-16 12:40:28,793 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 12:40:28,793 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 12:40:28,794 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 12:40:28,820 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 12:40:28,820 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 12:40:28,823 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 12:40:31,402 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:46774 has connected.
+
+2025-08-16 12:41:14,948 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp127.0.0.1:8888->127.0.0.1:46774 has closed.
+
+2025-08-16 12:41:22,192 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 12:41:22,192 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 12:41:22,193 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 12:41:22,219 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 12:41:22,219 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 12:41:22,221 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 12:41:27,896 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:58422 has connected.
+
+2025-08-16 12:41:57,601 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp127.0.0.1:8888->127.0.0.1:58422 has closed.
+
+2025-08-16 12:41:59,727 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:38938 has connected.
+
+2025-08-16 14:13:32,858 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 14:13:32,858 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 14:13:32,859 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 14:13:32,890 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 14:13:32,890 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 14:13:32,895 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 14:24:42,509 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 14:24:42,510 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 14:24:42,512 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 14:24:42,553 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 14:24:42,553 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 14:24:42,562 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 14:25:09,692 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:52506 has connected.
+
+2025-08-16 14:25:28,765 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 14:25:28,765 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 14:25:28,766 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 14:25:28,792 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 14:25:28,792 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 14:25:28,793 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 14:25:34,977 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:52362 has connected.
+
+2025-08-16 14:26:04,514 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp127.0.0.1:8888->127.0.0.1:52362 has closed.
+
+2025-08-16 15:14:28,763 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 15:14:28,763 wd [INFO] Server starting
+2025-08-16 15:14:28,763 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 15:14:28,764 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 15:14:28,792 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 15:14:28,792 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 15:14:28,797 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 15:14:58,773 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:53484 has connected.
+
+2025-08-16 15:16:10,911 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp127.0.0.1:8888->127.0.0.1:53484 has closed.
+
+2025-08-16 15:16:19,130 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:35380 has connected.
+
+2025-08-16 15:16:32,694 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp127.0.0.1:8888->127.0.0.1:35380 has closed.
+
+2025-08-16 15:16:50,077 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:44802 has connected.
+
+2025-08-16 15:17:23,636 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp127.0.0.1:8888->127.0.0.1:44802 has closed.
+
+2025-08-16 15:42:49,934 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 15:42:49,934 wd [INFO] Server starting
+2025-08-16 15:42:49,934 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 15:42:49,935 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 15:42:49,962 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 15:42:49,962 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 15:42:49,966 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 15:43:05,607 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:49884 has connected.
+
+2025-08-16 15:43:05,607 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=127.168.23.128, port=3306, user=root, db=school
+2025-08-16 15:43:05,607 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: testuser
+2025-08-16 15:43:05,607 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 15:43:05,632 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 15:43:05,632 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'testuser'
+2025-08-16 15:43:05,643 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for testuser: hlb1ZmDQ4cVkY57Z
+2025-08-16 15:46:28,616 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 15:46:28,616 wd [INFO] Server starting
+2025-08-16 15:46:28,616 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 15:46:28,617 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 15:46:28,643 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 15:46:28,643 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 15:46:28,645 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 15:46:58,086 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:44448 has connected.
+
+2025-08-16 15:47:12,366 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp127.0.0.1:8888->127.0.0.1:44448 has closed.
+
+2025-08-16 15:47:12,366 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=127.168.23.128, port=3306, user=root, db=school
+2025-08-16 15:47:12,366 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: user2
+2025-08-16 15:47:12,366 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 15:47:12,395 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 15:47:12,395 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'user2
+2025-08-16 15:47:12,397 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for user2: Ou3b8XdQ
+2025-08-16 15:58:54,964 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 15:58:54,964 wd [INFO] Server starting
+2025-08-16 15:58:54,964 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 15:58:54,965 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 15:58:54,992 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 15:58:54,992 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 15:58:54,995 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 15:59:04,346 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:45094 has connected.
+
+2025-08-16 15:59:13,026 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 15:59:13,026 wd [INFO] Server starting
+2025-08-16 15:59:13,026 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 15:59:13,027 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 15:59:13,053 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 15:59:13,053 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 15:59:13,055 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 15:59:20,754 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:41452 has connected.
+
+2025-08-16 15:59:20,754 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=127.168.23.128, port=3306, user=root, db=school
+2025-08-16 15:59:20,754 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: testuser
+2025-08-16 15:59:20,754 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 15:59:20,780 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 15:59:20,781 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'testuser'
+2025-08-16 15:59:20,782 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for testuser: 1A7v5V7G
+2025-08-16 16:00:04,569 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 16:00:04,569 wd [INFO] Server starting
+2025-08-16 16:00:04,570 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 16:00:04,570 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 16:00:04,596 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 16:00:04,596 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 16:00:04,599 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 16:00:14,160 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:51616 has connected.
+
+2025-08-16 16:00:14,161 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=127.168.23.128, port=3306, user=root, db=school
+2025-08-16 16:00:14,161 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: user2222
+2025-08-16 16:00:14,161 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 16:00:14,186 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 16:00:14,187 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'user2222'
+2025-08-16 16:00:14,188 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for user2222: CUNvZryO
+2025-08-16 16:00:32,044 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 16:00:32,044 wd [INFO] Server starting
+2025-08-16 16:00:32,044 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 16:00:32,045 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 16:00:32,073 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 16:00:32,073 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 16:00:32,076 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 16:00:35,427 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:40488 has connected.
+
+2025-08-16 16:00:35,428 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=127.168.23.128, port=3306, user=root, db=school
+2025-08-16 16:00:35,428 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: user2232
+2025-08-16 16:00:35,428 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 16:00:35,453 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 16:00:35,453 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'user2232'
+2025-08-16 16:00:35,454 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for user2232: 9QYO3P8x
+2025-08-16 16:12:54,235 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 16:12:54,235 wd [INFO] Server starting
+2025-08-16 16:12:54,235 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 16:12:54,236 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 16:12:54,270 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 16:12:54,270 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 16:12:54,273 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 16:13:18,475 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:36686 has connected.
+
+2025-08-16 16:13:18,476 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=127.168.23.128, port=3306, user=root, db=school
+2025-08-16 16:13:18,476 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: user2232
+2025-08-16 16:13:18,476 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 16:13:18,504 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 16:13:18,504 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'user2232'
+2025-08-16 16:13:18,505 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for user2232: QuFRoPul
+2025-08-16 16:17:45,989 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 16:17:45,989 wd [INFO] Server starting
+2025-08-16 16:17:45,989 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 16:17:45,990 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 16:17:46,015 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 16:17:46,015 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 16:17:46,017 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 16:17:59,954 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:42692 has connected.
+
+2025-08-16 16:17:59,954 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=127.168.23.128, port=3306, user=root, db=school
+2025-08-16 16:17:59,954 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: user2232
+2025-08-16 16:17:59,954 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 16:17:59,981 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 16:17:59,981 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'user2232'
+2025-08-16 16:17:59,983 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for user2232: eos4WbI0
+2025-08-16 16:38:34,703 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 16:38:34,703 wd [INFO] Server starting
+2025-08-16 16:38:34,703 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 16:38:34,704 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 16:38:34,735 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 16:38:34,735 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 16:38:34,737 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 16:38:42,095 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:53590 has connected.
+
+2025-08-16 16:38:42,095 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=127.168.23.128, port=3306, user=root, db=school
+2025-08-16 16:38:42,095 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: user2232
+2025-08-16 16:38:42,095 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 16:38:42,120 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 16:38:42,120 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'user2232'
+2025-08-16 16:38:42,121 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for user2232: YJi6BQjz
+2025-08-16 16:49:09,314 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 16:49:09,357 wd [INFO] Server starting
+2025-08-16 16:49:09,362 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 16:49:09,544 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 16:49:11,753 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 16:49:11,755 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 16:49:11,833 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 16:50:35,287 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:59794 has connected.
+
+2025-08-16 16:50:35,319 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=127.168.23.128, port=3306, user=root, db=school
+2025-08-16 16:50:35,320 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: user2232
+2025-08-16 16:50:35,321 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 16:50:36,272 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 16:50:36,274 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'user2232'
+2025-08-16 16:50:36,300 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for user2232: XO8uIs08
+2025-08-16 17:07:40,155 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 17:07:40,198 wd [INFO] Server starting
+2025-08-16 17:07:40,204 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 17:07:40,387 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 17:07:42,620 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 17:07:42,622 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 17:07:42,702 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 17:08:22,779 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:42586 has connected.
+
+2025-08-16 17:08:33,909 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp127.0.0.1:8888->127.0.0.1:42586 has closed.
+
+2025-08-16 17:08:33,925 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=127.168.23.128, port=3306, user=root, db=school
+2025-08-16 17:08:33,926 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: user223231322
+2025-08-16 17:08:33,927 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 17:08:34,852 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 17:08:34,854 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'user223231322
+2025-08-16 17:08:34,881 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for user223231322: iwMvh4U3
+2025-08-16 17:09:00,163 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:55578 has connected.
+
+2025-08-16 17:09:00,164 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: user2323
+2025-08-16 17:09:00,165 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 17:09:01,095 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 17:09:01,096 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'user2323'
+2025-08-16 17:09:01,115 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for user2323: ugBp48kZ
+2025-08-16 17:25:22,788 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 17:25:22,832 wd [INFO] Server starting
+2025-08-16 17:25:22,837 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 17:25:23,015 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 17:25:25,278 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 17:25:25,280 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 17:25:25,363 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 17:25:35,639 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:36904 has connected.
+
+2025-08-16 17:25:35,670 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=127.168.23.128, port=3306, user=root, db=school
+2025-08-16 17:25:35,672 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: user2323
+2025-08-16 17:25:35,673 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 17:25:36,612 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 17:25:36,614 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'user2323'
+2025-08-16 17:25:36,640 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for user2323: uHZznaZg
+2025-08-16 17:26:08,619 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 17:26:08,661 wd [INFO] Server starting
+2025-08-16 17:26:08,667 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 17:26:08,846 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 17:26:11,037 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 17:26:11,040 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 17:26:11,118 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 17:26:19,096 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:42458 has connected.
+
+2025-08-16 17:26:19,128 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=127.168.23.128, port=3306, user=root, db=school
+2025-08-16 17:26:19,129 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: user2323
+2025-08-16 17:26:19,130 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 17:26:20,051 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 17:26:20,053 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'user2323'
+2025-08-16 17:26:20,079 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for user2323: o9KQhxOY
+2025-08-16 17:27:26,874 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 17:27:26,917 wd [INFO] Server starting
+2025-08-16 17:27:26,923 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 17:27:27,099 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 17:27:29,338 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 17:27:29,340 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 17:27:29,418 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 17:27:35,502 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:41730 has connected.
+
+2025-08-16 17:27:35,565 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=127.168.23.128, port=3306, user=root, db=school
+2025-08-16 17:27:35,567 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: user2323
+2025-08-16 17:27:35,569 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 17:27:36,535 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 17:27:36,537 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'user2323'
+2025-08-16 17:27:36,565 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for user2323: zcD6fM9Y
+2025-08-16 17:27:39,007 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp127.0.0.1:8888->127.0.0.1:41730 has closed.
+
+2025-08-16 17:31:08,555 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 17:31:08,601 wd [INFO] Server starting
+2025-08-16 17:31:08,607 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 17:31:08,802 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 17:31:11,290 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 17:31:11,292 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 17:31:11,377 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 17:31:13,796 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:41410 has connected.
+
+2025-08-16 17:31:13,830 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=127.168.23.128, port=3306, user=root, db=school
+2025-08-16 17:31:13,832 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: user2323
+2025-08-16 17:31:13,835 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: root@127.168.23.128:3306/school
+2025-08-16 17:31:14,835 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 17:31:14,838 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'user2323'
+2025-08-16 17:31:14,864 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for user2323: G6ecPBwA
+2025-08-16 22:03:23,006 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 22:03:23,006 wd [INFO] Server starting
+2025-08-16 22:03:23,006 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 22:03:23,010 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-16 22:03:23,012 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 22:03:23,012 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 22:03:23,018 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 22:05:02,441 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 22:05:02,441 wd [INFO] Server starting
+2025-08-16 22:05:02,441 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 22:05:02,443 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-16 22:05:02,445 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 22:05:02,445 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 22:05:02,446 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 22:10:04,623 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 22:10:04,623 wd [INFO] Server starting
+2025-08-16 22:10:04,623 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 22:10:04,624 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-16 22:10:04,626 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 22:10:04,626 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 22:10:04,627 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 22:13:18,013 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 22:13:18,013 wd [INFO] Server starting
+2025-08-16 22:13:18,013 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 22:13:18,015 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-16 22:13:18,016 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 22:13:18,017 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 22:13:18,018 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 22:22:06,324 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 22:22:06,324 wd [INFO] Server starting
+2025-08-16 22:22:06,324 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 22:22:06,326 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-16 22:22:06,328 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 22:22:06,328 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 22:22:06,330 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 22:26:26,348 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 22:26:26,348 wd [INFO] Server starting
+2025-08-16 22:26:26,348 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 22:26:26,349 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-16 22:26:26,351 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 22:26:26,351 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 22:26:26,353 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 22:32:05,583 wd [INFO] [main.cc:main:Server starting...
+2025-08-16 22:32:05,583 wd [INFO] Server starting
+2025-08-16 22:32:05,583 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-16 22:32:05,586 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-16 22:32:05,588 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-16 22:32:05,588 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-16 22:32:05,591 wd [INFO] [main.cc:main:Starting server components...
+2025-08-16 22:38:56,556 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:42982 has connected.
+
+2025-08-16 22:39:12,833 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp127.0.0.1:8888->127.0.0.1:42982 has closed.
+
+2025-08-16 22:41:43,169 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:57712 has connected.
+
+2025-08-16 22:42:01,974 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp127.0.0.1:8888->127.0.0.1:57712 has closed.
+
+2025-08-16 22:51:45,987 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:53084 has connected.
+
+2025-08-16 22:51:45,989 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->59.173.139.224:53084 has closed.
+
+2025-08-16 22:52:20,119 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:53103 has connected.
+
+2025-08-16 22:52:20,119 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->59.173.139.224:53103 has closed.
+
+2025-08-16 23:02:43,991 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->196.251.91.11:36110 has connected.
+
+2025-08-16 23:03:00,754 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->196.251.91.11:36110 has closed.
+
+2025-08-16 23:03:01,266 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->196.251.91.11:53942 has connected.
+
+2025-08-16 23:03:11,865 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->196.251.91.11:53942 has closed.
+
+2025-08-16 23:03:11,865 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->196.251.91.11:41094 has connected.
+
+2025-08-16 23:03:22,337 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->196.251.91.11:41094 has closed.
+
+2025-08-17 00:30:15,192 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->89.248.164.165:35048 has connected.
+
+2025-08-17 01:20:53,812 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 01:20:53,813 wd [INFO] Server starting
+2025-08-17 01:20:53,813 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 01:20:53,814 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 01:20:53,888 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 01:20:53,888 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 01:20:53,948 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 01:21:43,425 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp127.0.0.1:8888->127.0.0.1:38922 has connected.
+
+2025-08-17 01:22:32,171 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->111.181.130.81:39635 has connected.
+
+2025-08-17 01:23:07,159 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 01:23:07,159 wd [INFO] Server starting
+2025-08-17 01:23:07,159 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 01:23:07,161 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 01:23:07,163 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 01:23:07,163 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 01:23:07,165 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 01:24:28,793 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->111.181.130.81:39722 has connected.
+
+2025-08-17 01:24:28,793 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 01:24:28,793 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: test_user
+2025-08-17 01:24:28,793 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 01:24:28,794 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 01:24:28,794 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'test_user'
+2025-08-17 01:24:28,816 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for test_user: Fdr9qTTh
+2025-08-17 01:24:28,883 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 01:24:28,883 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 01:24:28,883 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 01:24:28,883 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_user'
+2025-08-17 01:24:28,884 wd [WARN] [UserLoginService.cc:getUserCredentials:User not found: test_user, result size: 1
+2025-08-17 01:24:28,884 wd [DEBUG] [BusinessService.cc:process:User not found in DB: test_user
+2025-08-17 01:24:28,972 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->111.181.130.81:39722 has closed.
+
+2025-08-17 01:24:53,792 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->111.181.130.81:39711 has connected.
+
+2025-08-17 01:24:53,803 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: test_user
+2025-08-17 01:24:53,803 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 01:24:53,803 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 01:24:53,803 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'test_user'
+2025-08-17 01:24:53,804 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for test_user: 6Kf2eq70
+2025-08-17 01:24:53,883 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 01:24:53,884 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 01:24:53,884 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_user'
+2025-08-17 01:24:53,884 wd [WARN] [UserLoginService.cc:getUserCredentials:User not found: test_user, result size: 1
+2025-08-17 01:24:53,884 wd [DEBUG] [BusinessService.cc:process:User not found in DB: test_user
+2025-08-17 01:24:53,972 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->111.181.130.81:39711 has closed.
+
+2025-08-17 01:25:35,513 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->111.181.130.81:39566 has connected.
+
+2025-08-17 01:25:35,513 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: test_user
+2025-08-17 01:25:35,513 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 01:25:35,514 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 01:25:35,514 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'test_user'
+2025-08-17 01:25:35,514 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for test_user: cHMjcqVl
+2025-08-17 01:25:35,593 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 01:25:35,593 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 01:25:35,593 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_user'
+2025-08-17 01:25:35,594 wd [WARN] [UserLoginService.cc:getUserCredentials:User not found: test_user, result size: 1
+2025-08-17 01:25:35,594 wd [DEBUG] [BusinessService.cc:process:User not found in DB: test_user
+2025-08-17 01:25:35,673 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->111.181.130.81:39566 has closed.
+
+2025-08-17 01:42:03,787 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 01:42:03,787 wd [INFO] Server starting
+2025-08-17 01:42:03,787 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 01:42:03,788 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 01:42:03,790 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 01:42:03,790 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 01:42:03,792 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 01:42:20,853 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->111.181.130.81:39691 has connected.
+
+2025-08-17 01:42:20,853 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 01:42:20,853 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: test_user
+2025-08-17 01:42:20,853 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 01:42:20,853 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 01:42:20,854 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'test_user'
+2025-08-17 01:42:20,854 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for test_user: oBHsk34b
+2025-08-17 01:42:20,938 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 01:42:20,938 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 01:42:20,938 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 01:42:20,938 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_user'
+2025-08-17 01:42:20,939 wd [WARN] [UserLoginService.cc:getUserCredentials:User not found: test_user, result size: 1
+2025-08-17 01:42:20,939 wd [DEBUG] [BusinessService.cc:process:User not found in DB: test_user
+2025-08-17 01:42:21,018 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->111.181.130.81:39691 has closed.
+
+2025-08-17 01:49:03,996 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 01:49:03,997 wd [INFO] Server starting
+2025-08-17 01:49:03,997 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 01:49:03,998 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 01:49:04,002 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 01:49:04,002 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 01:49:04,003 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 01:49:18,821 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->111.181.130.81:39588 has connected.
+
+2025-08-17 01:49:18,821 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 01:49:18,821 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: test_user
+2025-08-17 01:49:18,821 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 01:49:18,822 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 01:49:18,822 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'test_user'
+2025-08-17 01:49:18,822 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for test_user: rMjn4wfj
+2025-08-17 01:49:18,891 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 01:49:18,891 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 01:49:18,892 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 01:49:18,892 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_user'
+2025-08-17 01:49:18,892 wd [WARN] [UserLoginService.cc:getUserCredentials:User not found: test_user, result size: 1
+2025-08-17 01:49:18,892 wd [DEBUG] [BusinessService.cc:process:User not found in DB: test_user
+2025-08-17 01:49:18,961 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->111.181.130.81:39588 has closed.
+
+2025-08-17 01:56:51,810 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 01:56:51,811 wd [INFO] Server starting
+2025-08-17 01:56:51,811 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 01:56:51,814 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 01:56:51,818 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 01:56:51,818 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 01:56:51,820 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 01:56:58,833 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->111.181.130.81:39727 has connected.
+
+2025-08-17 01:56:58,833 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 01:56:58,833 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: test_user
+2025-08-17 01:56:58,833 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 01:56:58,834 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 01:56:58,834 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'test_user'
+2025-08-17 01:56:58,835 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for test_user: gy7f9NQ0
+2025-08-17 01:56:58,913 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 01:56:58,913 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 01:56:58,914 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 01:56:58,914 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_user'
+2025-08-17 01:56:58,914 wd [WARN] [UserLoginService.cc:getUserCredentials:User not found: test_user, result size: 1
+2025-08-17 01:56:58,914 wd [DEBUG] [BusinessService.cc:process:User not found in DB: test_user
+2025-08-17 01:56:58,993 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->111.181.130.81:39727 has closed.
+
+2025-08-17 02:18:26,747 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 02:18:26,747 wd [INFO] Server starting
+2025-08-17 02:18:26,747 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 02:18:26,748 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 02:18:26,750 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 02:18:26,750 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 02:18:26,751 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 02:18:32,670 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->47.111.20.8:53682 has connected.
+
+2025-08-17 02:18:32,670 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 02:18:32,670 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: test_user
+2025-08-17 02:18:32,670 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 02:18:32,671 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 02:18:32,671 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'test_user'
+2025-08-17 02:18:32,671 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for test_user: ewASCaiC
+2025-08-17 02:18:32,672 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 02:18:32,673 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 02:18:32,673 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 02:18:32,673 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_user'
+2025-08-17 02:18:32,673 wd [WARN] [UserLoginService.cc:getUserCredentials:User not found: test_user, result size: 1
+2025-08-17 02:18:32,673 wd [DEBUG] [BusinessService.cc:process:User not found in DB: test_user
+2025-08-17 02:18:32,674 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->47.111.20.8:53682 has closed.
+
+2025-08-17 15:50:47,729 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 15:50:47,729 wd [INFO] Server starting
+2025-08-17 15:50:47,729 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 15:50:47,731 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 15:50:47,733 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 15:50:47,733 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 15:50:47,734 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 15:56:05,848 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 15:56:05,848 wd [INFO] Server starting
+2025-08-17 15:56:05,848 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 15:56:05,850 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 15:56:05,852 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 15:56:05,852 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 15:56:05,853 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 15:58:53,698 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 15:58:53,698 wd [INFO] Server starting
+2025-08-17 15:58:53,698 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 15:58:53,700 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 15:58:53,702 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 15:58:53,702 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 15:58:53,703 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 16:18:44,247 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 16:18:44,249 wd [INFO] Server starting
+2025-08-17 16:18:44,249 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 16:18:44,251 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 16:18:44,262 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 16:18:44,262 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 16:18:44,268 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 17:03:08,874 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 17:03:08,874 wd [INFO] Server starting
+2025-08-17 17:03:08,874 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 17:03:08,876 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 17:03:08,879 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 17:03:08,879 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 17:03:08,881 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 17:09:32,622 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 17:09:32,622 wd [INFO] Server starting
+2025-08-17 17:09:32,622 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 17:09:32,624 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 17:09:32,625 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 17:09:32,625 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 17:09:32,627 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 17:09:40,387 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->111.181.130.81:39632 has connected.
+
+2025-08-17 17:09:40,387 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 17:09:40,387 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: test_user
+2025-08-17 17:09:40,387 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 17:09:40,387 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 17:09:40,387 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'test_user'
+2025-08-17 17:09:40,397 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for test_user: 8WBIxUuo
+2025-08-17 17:09:40,461 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 17:09:40,461 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 17:09:40,462 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 17:09:40,462 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_user'
+2025-08-17 17:09:40,463 wd [WARN] [UserLoginService.cc:getUserCredentials:User not found: test_user, result size: 1
+2025-08-17 17:09:40,463 wd [DEBUG] [BusinessService.cc:process:User not found in DB: test_user
+2025-08-17 17:09:40,541 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->111.181.130.81:39632 has closed.
+
+2025-08-17 17:40:12,765 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 17:40:12,765 wd [INFO] Server starting
+2025-08-17 17:40:12,765 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 17:40:12,767 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 17:40:12,768 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 17:40:12,768 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 17:40:12,770 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 17:41:30,409 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 17:41:30,409 wd [INFO] Server starting
+2025-08-17 17:41:30,409 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 17:41:30,411 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 17:41:30,413 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 17:41:30,413 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 17:41:30,414 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 17:42:31,319 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 17:42:31,319 wd [INFO] Server starting
+2025-08-17 17:42:31,319 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 17:42:31,321 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 17:42:31,323 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 17:42:31,323 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 17:42:31,324 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 17:42:44,248 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:13584 has connected.
+
+2025-08-17 17:45:01,818 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 17:45:01,818 wd [INFO] Server starting
+2025-08-17 17:45:01,818 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 17:45:01,821 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 17:45:01,824 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 17:45:01,824 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 17:45:01,826 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 17:45:23,456 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:13609 has connected.
+
+2025-08-17 17:48:00,841 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 17:48:00,841 wd [INFO] Server starting
+2025-08-17 17:48:00,841 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 17:48:00,844 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 17:48:00,848 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 17:48:00,848 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 17:48:00,849 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 17:48:11,480 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->111.181.130.81:39689 has connected.
+
+2025-08-17 17:48:11,480 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 17:48:11,480 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: test_user
+2025-08-17 17:48:11,480 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 17:48:11,481 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 17:48:11,481 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'test_user'
+2025-08-17 17:48:11,481 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for test_user: oMlQS3xn
+2025-08-17 17:48:11,520 wd [INFO] [UserRegistrationService.cc:handleStage2:Registration Stage2 started for: test_user
+2025-08-17 17:48:11,520 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 17:48:11,520 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 17:48:11,520 wd [DEBUG] [MySQLClient.cc:writeOperation:Executing write operation: INSERT INTO users (name, setting, encrypt) VALUES ('test_user', '$1$oMlQS3xn$', 'encrypted_pass_with_salt')
+2025-08-17 17:48:11,526 wd [INFO] [MySQLClient.cc:writeOperation:Write operation affected 1 rows
+2025-08-17 17:48:11,526 wd [INFO] [UserRegistrationService.cc:saveUser:User saved to database: test_user
+2025-08-17 17:48:11,526 wd [INFO] [UserRegistrationService.cc:handleStage2:User registered successfully: test_user
+2025-08-17 17:48:11,570 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 17:48:11,570 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 17:48:11,571 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 17:48:11,571 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_user'
+2025-08-17 17:48:11,572 wd [DEBUG] [BusinessService.cc:process:Setting for test_user: $1$oMlQS3xn$
+2025-08-17 17:48:11,659 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->111.181.130.81:39689 has closed.
+
+2025-08-17 17:58:49,106 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 17:58:49,106 wd [INFO] Server starting
+2025-08-17 17:58:49,106 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 17:58:49,108 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 17:58:49,110 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 17:58:49,110 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 17:58:49,112 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 17:59:35,215 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:13731 has connected.
+
+2025-08-17 18:06:56,844 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 18:06:56,845 wd [INFO] Server starting
+2025-08-17 18:06:56,845 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 18:06:56,846 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 18:06:56,848 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 18:06:56,848 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 18:06:56,849 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 18:07:22,476 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:8937 has connected.
+
+2025-08-17 18:12:41,855 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 18:12:41,855 wd [INFO] Server starting
+2025-08-17 18:12:41,855 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 18:12:41,856 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 18:12:41,858 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 18:12:41,858 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 18:12:41,859 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 18:13:42,853 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->111.181.130.81:39670 has connected.
+
+2025-08-17 18:13:42,854 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 18:13:42,854 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: test_user
+2025-08-17 18:13:42,854 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 18:13:42,855 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 18:13:42,855 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'test_user'
+2025-08-17 18:13:42,855 wd [WARN] [UserRegistrationService.cc:handleStage1:Username already exists: test_user
+2025-08-17 18:13:42,891 wd [INFO] [UserRegistrationService.cc:handleStage2:Registration Stage2 started for: test_user
+2025-08-17 18:13:42,891 wd [ERROR] [UserRegistrationService.cc:handleStage2:Salt not found for user: test_user
+2025-08-17 18:13:42,924 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 18:13:42,924 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 18:13:42,924 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 18:13:42,924 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_user'
+2025-08-17 18:13:42,925 wd [DEBUG] [BusinessService.cc:process:Setting for test_user: $1$oMlQS3xn$
+2025-08-17 18:13:42,988 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->111.181.130.81:39670 has closed.
+
+2025-08-17 18:27:09,480 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 18:27:09,480 wd [INFO] Server starting
+2025-08-17 18:27:09,480 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 18:27:09,481 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 18:27:09,484 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 18:27:09,484 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 18:27:09,485 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 18:27:33,453 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:9072 has connected.
+
+2025-08-17 18:27:49,559 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 18:27:49,559 wd [INFO] Server starting
+2025-08-17 18:27:49,559 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 18:27:49,561 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 18:27:49,565 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 18:27:49,565 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 18:27:49,566 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 18:28:19,098 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:9079 has connected.
+
+2025-08-17 18:28:55,589 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->59.173.139.224:9079 has closed.
+
+2025-08-17 18:32:22,841 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 18:32:22,841 wd [INFO] Server starting
+2025-08-17 18:32:22,841 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 18:32:22,843 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 18:32:22,846 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 18:32:22,846 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 18:32:22,847 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 18:32:27,065 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->111.181.130.81:39663 has connected.
+
+2025-08-17 18:32:27,065 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 18:32:27,065 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: test_user
+2025-08-17 18:32:27,065 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 18:32:27,066 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 18:32:27,066 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'test_user'
+2025-08-17 18:32:27,067 wd [WARN] [UserRegistrationService.cc:handleStage1:Username already exists: test_user
+2025-08-17 18:32:27,105 wd [INFO] [UserRegistrationService.cc:handleStage2:Registration Stage2 started for: test_user
+2025-08-17 18:32:27,105 wd [ERROR] [UserRegistrationService.cc:handleStage2:Salt not found for user: test_user
+2025-08-17 18:32:27,145 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 18:32:27,145 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 18:32:27,146 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 18:32:27,146 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_user'
+2025-08-17 18:32:27,146 wd [DEBUG] [BusinessService.cc:process:Setting for test_user: $1$oMlQS3xn$
+2025-08-17 18:32:27,225 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->111.181.130.81:39663 has closed.
+
+2025-08-17 18:35:06,209 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 18:35:06,209 wd [INFO] Server starting
+2025-08-17 18:35:06,209 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 18:35:06,211 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 18:35:06,212 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 18:35:06,212 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 18:35:06,214 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 18:35:09,364 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->111.181.130.81:39619 has connected.
+
+2025-08-17 18:35:09,364 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 18:35:09,364 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: test_use
+2025-08-17 18:35:09,364 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 18:35:09,365 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 18:35:09,365 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'test_use'
+2025-08-17 18:35:09,365 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for test_use: 3BXMrsAv
+2025-08-17 18:35:09,404 wd [INFO] [UserRegistrationService.cc:handleStage2:Registration Stage2 started for: test_use
+2025-08-17 18:35:09,404 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 18:35:09,405 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 18:35:09,405 wd [DEBUG] [MySQLClient.cc:writeOperation:Executing write operation: INSERT INTO users (name, setting, encrypt) VALUES ('test_use', '$1$3BXMrsAv$', 'encrypted_pass_with_salt')
+2025-08-17 18:35:09,410 wd [INFO] [MySQLClient.cc:writeOperation:Write operation affected 1 rows
+2025-08-17 18:35:09,410 wd [INFO] [UserRegistrationService.cc:saveUser:User saved to database: test_use
+2025-08-17 18:35:09,410 wd [INFO] [UserRegistrationService.cc:handleStage2:User registered successfully: test_use
+2025-08-17 18:35:09,444 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 18:35:09,444 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 18:35:09,445 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 18:35:09,445 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_use'
+2025-08-17 18:35:09,445 wd [DEBUG] [BusinessService.cc:process:Setting for test_use: $1$3BXMrsAv$
+2025-08-17 18:35:09,514 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->111.181.130.81:39619 has closed.
+
+2025-08-17 18:52:43,220 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 18:52:43,220 wd [INFO] Server starting
+2025-08-17 18:52:43,220 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 18:52:43,222 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 18:52:43,225 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 18:52:43,226 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 18:52:43,227 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 18:53:11,203 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:14301 has connected.
+
+2025-08-17 19:07:52,628 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 19:07:52,628 wd [INFO] Server starting
+2025-08-17 19:07:52,628 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 19:07:52,630 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 19:07:52,632 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 19:07:52,633 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 19:07:52,634 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 19:08:48,777 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 19:08:48,777 wd [INFO] Server starting
+2025-08-17 19:08:48,777 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 19:08:48,778 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 19:08:48,780 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 19:08:48,780 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 19:08:48,781 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 19:13:47,440 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 19:13:47,519 wd [INFO] Server starting
+2025-08-17 19:13:47,530 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 19:13:47,870 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 19:13:48,476 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 19:13:48,479 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 19:13:48,567 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 19:58:13,958 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 19:58:13,958 wd [INFO] Server starting
+2025-08-17 19:58:13,958 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 19:58:13,960 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 19:58:13,963 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 19:58:13,963 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 19:58:13,964 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 19:58:29,310 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:1288 has connected.
+
+2025-08-17 19:59:31,109 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 19:59:31,186 wd [INFO] Server starting
+2025-08-17 19:59:31,196 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 19:59:31,531 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 19:59:32,158 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 19:59:32,161 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 19:59:32,257 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 19:59:54,569 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:1306 has connected.
+
+2025-08-17 20:07:22,770 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 20:07:22,770 wd [INFO] Server starting
+2025-08-17 20:07:22,770 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 20:07:22,772 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 20:07:22,774 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 20:07:22,774 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 20:07:22,775 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 20:07:53,604 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:1404 has connected.
+
+2025-08-17 20:08:01,098 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->59.173.139.224:1404 has closed.
+
+2025-08-17 20:23:04,782 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 20:23:04,782 wd [INFO] Server starting
+2025-08-17 20:23:04,782 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 20:23:04,784 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 20:23:04,787 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 20:23:04,787 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 20:23:04,789 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 20:23:24,669 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:1559 has connected.
+
+2025-08-17 20:23:24,670 wd [DEBUG] [SocketIO.cc:readPacket:Raw type: 02000000, Raw length: 03000000
+2025-08-17 20:23:24,670 wd [DEBUG] [SocketIO.cc:readPacket:Converted: type=2, length=3
+2025-08-17 20:23:24,670 wd [DEBUG] [SocketIO.cc:readPacket:Read 3 bytes of data
+2025-08-17 20:23:24,670 wd [DEBUG] [SocketIO.cc:readPacket:Discarding 1021 bytes of padding
+2025-08-17 20:23:52,019 wd [ERROR] [SocketIO.cc:readPacket:Incomplete packet type: 0/4 bytes
+2025-08-17 20:23:52,019 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->59.173.139.224:1559 has closed.
+
+2025-08-17 20:29:45,609 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 20:29:45,609 wd [INFO] Server starting
+2025-08-17 20:29:45,609 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 20:29:45,612 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 20:29:45,614 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 20:29:45,614 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 20:29:45,615 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 20:30:55,000 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->47.111.20.8:60562 has connected.
+
+2025-08-17 20:30:55,001 wd [DEBUG] [SocketIO.cc:readPacket:Raw type: 0A000000, Raw length: 09000000
+2025-08-17 20:30:55,001 wd [DEBUG] [SocketIO.cc:readPacket:Converted: type=10, length=9
+2025-08-17 20:30:55,001 wd [DEBUG] [SocketIO.cc:readPacket:Read 9 bytes of data
+2025-08-17 20:30:55,001 wd [DEBUG] [SocketIO.cc:readPacket:Discarding 1015 bytes of padding
+2025-08-17 20:31:09,785 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->47.111.20.8:60562 has closed.
+
+2025-08-17 20:31:09,785 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 20:31:09,785 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: test_user
+2025-08-17 20:31:09,785 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 20:31:09,786 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 20:31:09,786 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'test_user'
+2025-08-17 20:31:09,787 wd [WARN] [UserRegistrationService.cc:handleStage1:Username already exists: test_user
+2025-08-17 20:35:24,868 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 20:35:24,868 wd [INFO] Server starting
+2025-08-17 20:35:24,868 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 20:35:24,871 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 20:35:24,875 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 20:35:24,875 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 20:35:24,877 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 20:35:34,496 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->111.181.130.81:39662 has connected.
+
+2025-08-17 20:35:34,496 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 20:35:34,496 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: test_use
+2025-08-17 20:35:34,496 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 20:35:34,497 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 20:35:34,497 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'test_use'
+2025-08-17 20:35:34,498 wd [WARN] [UserRegistrationService.cc:handleStage1:Username already exists: test_use
+2025-08-17 20:35:34,530 wd [INFO] [UserRegistrationService.cc:handleStage2:Registration Stage2 started for: test_use
+2025-08-17 20:35:34,530 wd [ERROR] [UserRegistrationService.cc:handleStage2:Salt not found for user: test_use
+2025-08-17 20:35:34,563 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 20:35:34,563 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 20:35:34,564 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 20:35:34,564 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_use'
+2025-08-17 20:35:34,565 wd [DEBUG] [BusinessService.cc:process:Setting for test_use: $1$3BXMrsAv$
+2025-08-17 20:35:34,633 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->111.181.130.81:39662 has closed.
+
+2025-08-17 20:59:38,110 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 20:59:38,110 wd [INFO] Server starting
+2025-08-17 20:59:38,110 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 20:59:38,112 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 20:59:38,117 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 20:59:38,117 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 20:59:38,119 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 20:59:45,124 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->111.181.130.81:39709 has connected.
+
+2025-08-17 21:07:45,128 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 21:07:45,128 wd [INFO] Server starting
+2025-08-17 21:07:45,128 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 21:07:45,130 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 21:07:45,132 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 21:07:45,132 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 21:07:45,133 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 21:07:51,860 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->47.111.20.8:58538 has connected.
+
+2025-08-17 21:07:51,861 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 21:07:51,861 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: test_user
+2025-08-17 21:07:51,861 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 21:07:51,861 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 21:07:51,861 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'test_user'
+2025-08-17 21:07:51,862 wd [WARN] [UserRegistrationService.cc:handleStage1:Username already exists: test_user
+2025-08-17 21:07:51,863 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 21:07:51,863 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 21:07:51,863 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 21:07:51,863 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_user'
+2025-08-17 21:07:51,863 wd [DEBUG] [BusinessService.cc:process:Setting for test_user: $1$oMlQS3xn$
+2025-08-17 21:07:51,864 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->47.111.20.8:58538 has closed.
+
+2025-08-17 21:16:51,161 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 21:16:51,161 wd [INFO] Server starting
+2025-08-17 21:16:51,161 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 21:16:51,163 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 21:16:51,167 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 21:16:51,167 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 21:16:51,168 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 21:16:56,836 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->47.111.20.8:51838 has connected.
+
+2025-08-17 21:16:56,836 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 21:16:56,836 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: tet_user
+2025-08-17 21:16:56,836 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 21:16:56,837 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 21:16:56,837 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'tet_user'
+2025-08-17 21:16:56,837 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for tet_user: L17JbXoX
+2025-08-17 21:16:56,838 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 21:16:56,838 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 21:16:56,839 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 21:16:56,839 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'tet_user'
+2025-08-17 21:16:56,839 wd [WARN] [UserLoginService.cc:getUserCredentials:User not found: tet_user, result size: 1
+2025-08-17 21:16:56,839 wd [DEBUG] [BusinessService.cc:process:User not found in DB: tet_user
+2025-08-17 21:16:56,840 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->47.111.20.8:51838 has closed.
+
+2025-08-17 21:43:35,896 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 21:43:35,896 wd [INFO] Server starting
+2025-08-17 21:43:35,896 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 21:43:35,898 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 21:43:35,900 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 21:43:35,900 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 21:43:35,902 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 21:43:55,762 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:1343 has connected.
+
+2025-08-17 21:44:28,856 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->59.173.139.224:1343 has closed.
+
+2025-08-17 21:52:02,866 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 21:52:02,866 wd [INFO] Server starting
+2025-08-17 21:52:02,866 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 21:52:02,868 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 21:52:02,871 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 21:52:02,871 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 21:52:02,873 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 21:52:10,883 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->47.111.20.8:34036 has connected.
+
+2025-08-17 21:52:10,883 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 21:52:10,883 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: tet_user
+2025-08-17 21:52:10,883 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 21:52:10,883 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 21:52:10,883 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'tet_user'
+2025-08-17 21:52:10,884 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for tet_user: TcRLq9fD
+2025-08-17 21:52:10,885 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 21:52:10,885 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 21:52:10,885 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 21:52:10,885 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'tet_user'
+2025-08-17 21:52:10,885 wd [WARN] [UserLoginService.cc:getUserCredentials:User not found: tet_user, result size: 1
+2025-08-17 21:52:10,885 wd [DEBUG] [BusinessService.cc:process:User not found in DB: tet_user
+2025-08-17 21:52:10,886 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->47.111.20.8:34036 has closed.
+
+2025-08-17 22:00:44,124 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 22:00:44,124 wd [INFO] Server starting
+2025-08-17 22:00:44,124 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 22:00:44,125 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 22:00:44,127 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 22:00:44,127 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 22:00:44,129 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 22:00:54,498 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:9807 has connected.
+
+2025-08-17 22:07:43,873 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 22:07:43,873 wd [INFO] Server starting
+2025-08-17 22:07:43,873 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 22:07:43,874 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 22:07:43,876 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 22:07:43,876 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 22:07:43,878 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 22:08:45,898 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:9884 has connected.
+
+2025-08-17 22:08:45,899 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 22:08:45,899 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 22:08:45,900 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 22:08:45,900 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'myNameisOTTO'
+2025-08-17 22:08:45,900 wd [WARN] [UserLoginService.cc:getUserCredentials:User not found: myNameisOTTO, result size: 1
+2025-08-17 22:08:45,901 wd [DEBUG] [BusinessService.cc:process:User not found in DB: myNameisOTTO
+2025-08-17 22:09:04,269 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->59.173.139.224:9884 has closed.
+
+2025-08-17 22:11:15,098 wd [INFO] [main.cc:main:Server starting...
+2025-08-17 22:11:15,098 wd [INFO] Server starting
+2025-08-17 22:11:15,098 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-17 22:11:15,099 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 22:11:15,101 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 22:11:15,101 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-17 22:11:15,103 wd [INFO] [main.cc:main:Starting server components...
+2025-08-17 22:11:17,727 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->47.111.20.8:42790 has connected.
+
+2025-08-17 22:11:17,727 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 22:11:17,727 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: test_user2
+2025-08-17 22:11:17,727 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 22:11:17,727 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 22:11:17,727 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'test_user2'
+2025-08-17 22:11:17,728 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for test_user2: 7mZm7GNy
+2025-08-17 22:11:17,729 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-17 22:11:17,729 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-17 22:11:17,729 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-17 22:11:17,729 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_user2'
+2025-08-17 22:11:17,729 wd [WARN] [UserLoginService.cc:getUserCredentials:User not found: test_user2, result size: 1
+2025-08-17 22:11:17,729 wd [DEBUG] [BusinessService.cc:process:User not found in DB: test_user2
+2025-08-17 22:11:17,730 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->47.111.20.8:42790 has closed.
+
+2025-08-18 10:37:57,307 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 10:37:57,307 wd [INFO] Server starting
+2025-08-18 10:37:57,307 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 10:37:57,309 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 10:37:57,310 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 10:37:57,310 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 10:37:57,311 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 10:38:01,358 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:6677 has connected.
+
+2025-08-18 10:38:01,359 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 10:38:01,359 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: SakiSakiSaki
+2025-08-18 10:38:01,359 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 10:38:01,360 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 10:38:01,360 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'SakiSakiSaki'
+2025-08-18 10:38:01,360 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for SakiSakiSaki: OQE7HDtB
+2025-08-18 10:38:39,133 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->59.173.139.224:6677 has closed.
+
+2025-08-18 10:39:43,869 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 10:39:43,869 wd [INFO] Server starting
+2025-08-18 10:39:43,869 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 10:39:43,871 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 10:39:43,873 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 10:39:43,873 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 10:39:43,874 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 10:42:30,537 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 10:42:30,537 wd [INFO] Server starting
+2025-08-18 10:42:30,537 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 10:42:30,539 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 10:42:30,541 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 10:42:30,541 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 10:42:30,542 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 10:42:45,746 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:6769 has connected.
+
+2025-08-18 10:42:45,747 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 10:42:45,747 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: SakiSaki
+2025-08-18 10:42:45,747 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 10:42:45,747 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 10:42:45,747 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'SakiSaki'
+2025-08-18 10:42:45,748 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for SakiSaki: L4HWz1tY
+2025-08-18 10:56:55,118 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 10:56:55,118 wd [INFO] Server starting
+2025-08-18 10:56:55,118 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 10:56:55,119 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 10:56:55,122 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 10:56:55,122 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 10:56:55,123 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 10:57:21,713 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:7204 has connected.
+
+2025-08-18 10:57:21,714 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 10:57:21,714 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: SakiSakiSakiSaki
+2025-08-18 10:57:21,714 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 10:57:21,715 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 10:57:21,715 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'SakiSakiSakiSaki'
+2025-08-18 10:57:21,716 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for SakiSakiSakiSaki: 2GBrAxSm
+2025-08-18 10:57:21,736 wd [ERROR] [SocketIO.cc:readPacket:Invalid packet length: 536870912
+2025-08-18 11:34:10,551 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 11:34:10,551 wd [INFO] Server starting
+2025-08-18 11:34:10,551 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 11:34:10,553 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 11:34:10,555 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 11:34:10,555 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 11:34:10,556 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 11:34:49,197 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:8323 has connected.
+
+2025-08-18 11:34:49,199 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=0x0A000000, length=0x0A000000
+2025-08-18 11:34:49,199 wd [ERROR] [SocketIO.cc:readPacket:Invalid packet length: 1767992935
+2025-08-18 11:37:00,612 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 11:37:00,612 wd [INFO] Server starting
+2025-08-18 11:37:00,612 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 11:37:00,614 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 11:37:00,615 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 11:37:00,615 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 11:37:00,617 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 11:37:09,262 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 11:37:09,262 wd [INFO] Server starting
+2025-08-18 11:37:09,262 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 11:37:09,265 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 11:37:09,266 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 11:37:09,266 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 11:37:09,268 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 11:37:38,921 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:8377 has connected.
+
+2025-08-18 11:37:38,921 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=0x9543EB80, length=0x00007FBD
+2025-08-18 11:37:38,921 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 11:37:38,921 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: Feixilaomuji
+2025-08-18 11:37:38,921 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 11:37:38,921 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 11:37:38,921 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'Feixilaomuji'
+2025-08-18 11:37:38,922 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for Feixilaomuji: xXrVN82W
+2025-08-18 11:37:38,942 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=0x9543EB80, length=0x00007FBD
+2025-08-18 11:37:38,942 wd [ERROR] [SocketIO.cc:readPacket:Invalid packet length: 536870912
+2025-08-18 11:40:07,386 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 11:40:07,386 wd [INFO] Server starting
+2025-08-18 11:40:07,386 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 11:40:07,387 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 11:40:07,389 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 11:40:07,389 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 11:40:07,391 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 12:08:00,735 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 12:08:00,735 wd [INFO] Server starting
+2025-08-18 12:08:00,735 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 12:08:00,737 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 12:08:00,739 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 12:08:00,739 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 12:08:00,740 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 12:08:34,123 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:9139 has connected.
+
+2025-08-18 12:08:34,124 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=0x3977485184, length=0x32684
+2025-08-18 12:08:34,124 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=0x-317482112, length=0x32684
+2025-08-18 12:08:34,124 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 10, length= 11
+2025-08-18 12:08:34,124 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 12:08:34,124 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: hanguozhaji
+2025-08-18 12:08:34,124 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 12:08:34,125 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 12:08:34,125 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'hanguozhaji'
+2025-08-18 12:08:34,125 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for hanguozhaji: 16sqnCYD
+2025-08-18 12:08:34,150 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=0x3977485184, length=0x32684
+2025-08-18 12:08:34,150 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=0x-317482112, length=0x32684
+2025-08-18 12:08:34,150 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 218103808, length= 536870912
+2025-08-18 12:08:34,150 wd [ERROR] [SocketIO.cc:readPacket:Invalid packet length: 536870912
+2025-08-18 12:12:57,903 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 12:12:57,903 wd [INFO] Server starting
+2025-08-18 12:12:57,903 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 12:12:57,905 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 12:12:57,907 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 12:12:57,908 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 12:12:57,909 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 12:13:20,815 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:9225 has connected.
+
+2025-08-18 12:13:20,815 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=459664256, length=32579
+2025-08-18 12:13:20,815 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 10, length= 12
+2025-08-18 12:13:20,815 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 12:13:20,815 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: hanguozhaji1
+2025-08-18 12:13:20,815 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 12:13:20,816 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 12:13:20,816 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'hanguozhaji1'
+2025-08-18 12:13:20,816 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for hanguozhaji1: jYBnlYYq
+2025-08-18 12:13:20,838 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=459664256, length=32579
+2025-08-18 12:13:20,838 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 218103808, length= 536870912
+2025-08-18 12:13:20,838 wd [ERROR] [SocketIO.cc:readPacket:Invalid packet length: 536870912
+2025-08-18 12:15:09,631 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->59.173.139.224:9225 has closed.
+
+2025-08-18 12:18:55,758 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 12:18:55,758 wd [INFO] Server starting
+2025-08-18 12:18:55,758 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 12:18:55,759 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 12:18:55,761 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 12:18:55,761 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 12:18:55,763 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 12:19:11,420 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:9350 has connected.
+
+2025-08-18 12:19:11,420 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=112647040, length=32644
+2025-08-18 12:19:11,420 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 10, length= 13
+2025-08-18 12:19:11,421 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 12:19:11,421 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: hanshhizhaji3
+2025-08-18 12:19:11,421 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 12:19:11,421 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 12:19:11,421 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'hanshhizhaji3'
+2025-08-18 12:19:11,422 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for hanshhizhaji3: t8RfThb6
+2025-08-18 12:19:11,443 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=112647040, length=32644
+2025-08-18 12:19:11,443 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 13, length= 32
+2025-08-18 12:22:32,320 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 12:22:32,320 wd [INFO] Server starting
+2025-08-18 12:22:32,320 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 12:22:32,322 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 12:22:32,324 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 12:22:32,324 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 12:22:32,326 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 12:24:11,668 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:9442 has connected.
+
+2025-08-18 12:24:11,668 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=1893194624, length=32640
+2025-08-18 12:24:11,668 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 10, length= 14
+2025-08-18 12:24:11,668 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 12:24:11,668 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: hanshizhajiwyq
+2025-08-18 12:24:11,668 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 12:24:11,669 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 12:24:11,669 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'hanshizhajiwyq'
+2025-08-18 12:24:11,669 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for hanshizhajiwyq: bOMkEbBm
+2025-08-18 12:24:11,689 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=1893194624, length=32640
+2025-08-18 12:24:11,689 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 13, length= 32
+2025-08-18 12:41:31,005 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 12:41:31,005 wd [INFO] Server starting
+2025-08-18 12:41:31,005 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 12:41:31,007 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 12:41:31,010 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 12:41:31,010 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 12:41:31,011 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 12:41:36,785 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->47.111.20.8:38630 has connected.
+
+2025-08-18 12:41:36,786 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-1932199040, length=32709
+2025-08-18 12:41:36,786 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 10, length= 10
+2025-08-18 12:41:36,786 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 12:41:36,786 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: test_user3
+2025-08-18 12:41:36,786 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 12:41:36,786 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 12:41:36,786 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'test_user3'
+2025-08-18 12:41:36,787 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for test_user3: LxJTsKFC
+2025-08-18 12:41:36,787 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-1932199040, length=32709
+2025-08-18 12:41:36,787 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 13, length= 24
+2025-08-18 12:41:36,788 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-1932199040, length=32709
+2025-08-18 12:41:36,788 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 1, length= 10
+2025-08-18 12:41:36,788 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 12:41:36,788 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 12:41:36,788 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 12:41:36,788 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_user3'
+2025-08-18 12:41:36,788 wd [WARN] [UserLoginService.cc:getUserCredentials:User not found: test_user3, result size: 1
+2025-08-18 12:41:36,788 wd [DEBUG] [BusinessService.cc:process:User not found in DB: test_user3
+2025-08-18 12:41:36,789 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-1932199040, length=32709
+2025-08-18 12:41:36,789 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 4, length= 24
+2025-08-18 12:41:36,789 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->47.111.20.8:38630 has closed.
+
+2025-08-18 12:50:00,474 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 12:50:00,474 wd [INFO] Server starting
+2025-08-18 12:50:00,474 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 12:50:00,475 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 12:50:00,477 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 12:50:00,477 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 12:50:00,478 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 12:50:03,371 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->47.111.20.8:58374 has connected.
+
+2025-08-18 12:50:03,371 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-1122190464, length=32683
+2025-08-18 12:50:03,371 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 10, length= 10
+2025-08-18 12:50:03,372 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 12:50:03,372 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: test_user3
+2025-08-18 12:50:03,372 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 12:50:03,372 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 12:50:03,372 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'test_user3'
+2025-08-18 12:50:03,373 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for test_user3: fkFo3Gj7
+2025-08-18 12:50:03,373 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-1122190464, length=32683
+2025-08-18 12:50:03,373 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 13, length= 24
+2025-08-18 12:50:03,374 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-1122190464, length=32683
+2025-08-18 12:50:03,374 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 1, length= 10
+2025-08-18 12:50:03,374 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 12:50:03,374 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 12:50:03,374 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 12:50:03,374 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_user3'
+2025-08-18 12:50:03,375 wd [WARN] [UserLoginService.cc:getUserCredentials:User not found: test_user3, result size: 1
+2025-08-18 12:50:03,375 wd [DEBUG] [BusinessService.cc:process:User not found in DB: test_user3
+2025-08-18 12:50:03,375 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-1122190464, length=32683
+2025-08-18 12:50:03,375 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 4, length= 24
+2025-08-18 12:50:03,376 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->47.111.20.8:58374 has closed.
+
+2025-08-18 14:05:18,429 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 14:05:18,429 wd [INFO] Server starting
+2025-08-18 14:05:18,429 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 14:05:18,430 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 14:05:18,432 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 14:05:18,432 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 14:05:18,434 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 14:05:37,680 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:11366 has connected.
+
+2025-08-18 14:05:37,680 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-1077793920, length=32517
+2025-08-18 14:05:37,680 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 10, length= 9
+2025-08-18 14:05:37,680 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 14:05:37,681 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: shuaiOTTO
+2025-08-18 14:05:37,681 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 14:05:37,681 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 14:05:37,681 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'shuaiOTTO'
+2025-08-18 14:05:37,682 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for shuaiOTTO: pqM3wRWO
+2025-08-18 14:05:37,704 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-1077793920, length=32517
+2025-08-18 14:05:37,704 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 10, length= 9
+2025-08-18 14:05:37,704 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-1077793920, length=32517
+2025-08-18 14:05:37,704 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 167772160, length= 218103808
+2025-08-18 14:05:37,704 wd [ERROR] [SocketIO.cc:readPacket:Invalid packet length: 218103808
+2025-08-18 14:05:37,704 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: shuaiOTTO
+2025-08-18 14:05:37,704 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 14:05:37,705 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 14:05:37,705 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'shuaiOTTO'
+2025-08-18 14:05:37,705 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for shuaiOTTO: QWEfzjki
+2025-08-18 14:08:49,727 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 14:08:49,727 wd [INFO] Server starting
+2025-08-18 14:08:49,727 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 14:08:49,731 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 14:08:49,733 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 14:08:49,733 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 14:08:49,735 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 14:10:14,482 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->47.111.20.8:56818 has connected.
+
+2025-08-18 14:10:14,482 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-366691456, length=32746
+2025-08-18 14:10:14,482 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 10, length= 10
+2025-08-18 14:10:14,482 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 14:10:14,482 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: test_user3
+2025-08-18 14:10:14,482 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 14:10:14,483 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 14:10:14,483 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'test_user3'
+2025-08-18 14:10:14,484 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for test_user3: 6Wz9YTYw
+2025-08-18 14:10:14,484 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-366691456, length=32746
+2025-08-18 14:10:14,484 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 13, length= 35
+2025-08-18 14:10:14,484 wd [INFO] [UserRegistrationService.cc:handleStage2:Registration Stage2 started for: test_user3
+2025-08-18 14:10:14,484 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 14:10:14,485 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 14:10:14,485 wd [DEBUG] [MySQLClient.cc:writeOperation:Executing write operation: INSERT INTO users (name, setting, encrypt) VALUES ('test_user3', '6Wz9YTYw', 'encrypted_pass_with_salt')
+2025-08-18 14:10:14,490 wd [INFO] [MySQLClient.cc:writeOperation:Write operation affected 0 rows
+2025-08-18 14:10:14,490 wd [INFO] [UserRegistrationService.cc:saveUser:User saved to database: test_user3
+2025-08-18 14:10:14,490 wd [INFO] [UserRegistrationService.cc:handleStage2:User registered successfully: test_user3
+2025-08-18 14:10:14,490 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-366691456, length=32746
+2025-08-18 14:10:14,490 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 1, length= 10
+2025-08-18 14:10:14,490 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 14:10:14,490 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 14:10:14,491 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 14:10:14,491 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_user3'
+2025-08-18 14:10:14,491 wd [DEBUG] [BusinessService.cc:process:Setting for test_user3: 6Wz9YTYw
+2025-08-18 14:10:14,492 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-366691456, length=32746
+2025-08-18 14:10:14,492 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 4, length= 24
+2025-08-18 14:10:14,493 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->47.111.20.8:56818 has closed.
+
+2025-08-18 14:10:50,183 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:10218 has connected.
+
+2025-08-18 14:10:50,183 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-366691456, length=32746
+2025-08-18 14:10:50,183 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 10, length= 7
+2025-08-18 14:10:50,184 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: xuangou
+2025-08-18 14:10:50,184 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 14:10:50,184 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 14:10:50,184 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'xuangou'
+2025-08-18 14:10:50,185 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for xuangou: dKoB4qIG
+2025-08-18 14:10:50,203 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-366691456, length=32746
+2025-08-18 14:10:50,203 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 10, length= 7
+2025-08-18 14:10:50,203 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-366691456, length=32746
+2025-08-18 14:10:50,203 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: xuangou
+2025-08-18 14:10:50,203 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 14:10:50,203 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 167772160, length= 218103808
+2025-08-18 14:10:50,203 wd [ERROR] [SocketIO.cc:readPacket:Invalid packet length: 218103808
+2025-08-18 14:10:50,204 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 14:10:50,204 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'xuangou'
+2025-08-18 14:10:50,204 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for xuangou: JhzjNeW2
+2025-08-18 14:32:04,587 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 14:32:04,587 wd [INFO] Server starting
+2025-08-18 14:32:04,587 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 14:32:04,589 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 14:32:04,591 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 14:32:04,591 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 14:32:04,592 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 14:32:35,723 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:9537 has connected.
+
+2025-08-18 14:32:35,724 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-1777116288, length=32703
+2025-08-18 14:32:35,724 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 10, length= 9
+2025-08-18 14:32:35,724 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 14:32:35,724 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: xuangouau
+2025-08-18 14:32:35,724 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 14:32:35,725 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 14:32:35,725 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'xuangouau'
+2025-08-18 14:32:35,725 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for xuangouau: BV9HLF5a
+2025-08-18 14:32:35,748 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-1777116288, length=32703
+2025-08-18 14:32:35,748 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 13, length= 42
+2025-08-18 14:32:35,748 wd [INFO] [UserRegistrationService.cc:handleStage2:Registration Stage2 started for: xuangouau
+2025-08-18 14:32:35,748 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 14:32:35,749 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 14:32:35,749 wd [DEBUG] [MySQLClient.cc:writeOperation:Executing write operation: INSERT INTO users (name, setting, encrypt) VALUES ('xuangouau', 'BV9HLF5a', 'e7a35980bbae7be1b159129af8f53c00')
+2025-08-18 14:32:35,754 wd [INFO] [MySQLClient.cc:writeOperation:Write operation affected 0 rows
+2025-08-18 14:32:35,754 wd [INFO] [UserRegistrationService.cc:saveUser:User saved to database: xuangouau
+2025-08-18 14:32:35,754 wd [INFO] [UserRegistrationService.cc:handleStage2:User registered successfully: xuangouau
+2025-08-18 14:33:58,725 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 14:33:58,725 wd [INFO] Server starting
+2025-08-18 14:33:58,725 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 14:33:58,726 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 14:33:58,728 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 14:33:58,728 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 14:33:58,730 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 14:43:50,755 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 14:43:50,755 wd [INFO] Server starting
+2025-08-18 14:43:50,755 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 14:43:50,757 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 14:43:50,759 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 14:43:50,759 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 14:43:50,760 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 14:44:12,974 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:9702 has connected.
+
+2025-08-18 14:44:12,976 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=1734982528, length=32539
+2025-08-18 14:44:12,976 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 10, length= 11
+2025-08-18 14:44:12,976 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 14:44:12,976 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: TheLastXuan
+2025-08-18 14:44:12,976 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 14:44:12,976 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 14:44:12,976 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'TheLastXuan'
+2025-08-18 14:44:12,977 wd [INFO] [UserRegistrationService.cc:handleStage1:Generated salt for TheLastXuan: 6dEe3EkW
+2025-08-18 14:44:13,000 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=1734982528, length=32539
+2025-08-18 14:44:13,000 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 13, length= 44
+2025-08-18 14:44:13,000 wd [INFO] [UserRegistrationService.cc:handleStage2:Registration Stage2 started for: TheLastXuan
+2025-08-18 14:44:13,001 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 14:44:13,001 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 14:44:13,001 wd [DEBUG] [MySQLClient.cc:writeOperation:Executing write operation: INSERT INTO users (name, setting, encrypt) VALUES ('TheLastXuan', '6dEe3EkW', 'bfdfbb72db16b27cc138d681aa31ac1e')
+2025-08-18 14:44:13,005 wd [INFO] [MySQLClient.cc:writeOperation:Write operation affected 0 rows
+2025-08-18 14:44:13,005 wd [INFO] [UserRegistrationService.cc:saveUser:User saved to database: TheLastXuan
+2025-08-18 14:44:13,006 wd [INFO] [UserRegistrationService.cc:handleStage2:User registered successfully: TheLastXuan
+2025-08-18 14:44:25,833 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:9704 has connected.
+
+2025-08-18 14:44:25,834 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=1734982528, length=32539
+2025-08-18 14:44:25,834 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 1, length= 11
+2025-08-18 14:44:25,835 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 14:44:25,835 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 14:44:25,835 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 14:44:25,835 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'TheLastXuan'
+2025-08-18 14:44:25,836 wd [DEBUG] [BusinessService.cc:process:Setting for TheLastXuan: 6dEe3EkW
+2025-08-18 14:45:54,902 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 14:45:54,902 wd [INFO] Server starting
+2025-08-18 14:45:54,902 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 14:45:54,904 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 14:45:54,906 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 14:45:54,906 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 14:45:54,907 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 14:53:36,084 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->59.173.139.224:9781 has connected.
+
+2025-08-18 14:53:36,086 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=464395136, length=32568
+2025-08-18 14:53:36,086 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 1, length= 11
+2025-08-18 14:53:36,086 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 14:53:36,086 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 14:53:36,086 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 14:53:36,086 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'TheLastXuan'
+2025-08-18 14:53:36,087 wd [DEBUG] [BusinessService.cc:process:Setting for TheLastXuan: 6dEe3EkW
+2025-08-18 14:53:36,104 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=464395136, length=32568
+2025-08-18 14:53:36,104 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 4, length= 32
+2025-08-18 15:43:00,427 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 15:43:00,427 wd [INFO] Server starting
+2025-08-18 15:43:00,427 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 15:43:00,429 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 15:43:00,431 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 15:43:00,431 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 15:43:00,432 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 15:43:43,448 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->47.111.20.8:44138 has connected.
+
+2025-08-18 15:43:43,448 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-1873220736, length=32572
+2025-08-18 15:43:43,448 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 10, length= 10
+2025-08-18 15:43:43,449 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 15:43:43,449 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: test_user3
+2025-08-18 15:43:43,449 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 15:43:43,449 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 15:43:43,449 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'test_user3'
+2025-08-18 15:43:43,450 wd [WARN] [UserRegistrationService.cc:handleStage1:Username already exists: test_user3
+2025-08-18 15:43:43,450 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-1873220736, length=32572
+2025-08-18 15:43:43,450 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 13, length= 35
+2025-08-18 15:43:43,450 wd [INFO] [UserRegistrationService.cc:handleStage2:Registration Stage2 started for: test_user3
+2025-08-18 15:43:43,450 wd [ERROR] [UserRegistrationService.cc:handleStage2:Salt not found for user: test_user3
+2025-08-18 15:43:43,451 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-1873220736, length=32572
+2025-08-18 15:43:43,451 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 1, length= 10
+2025-08-18 15:43:43,451 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 15:43:43,451 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 15:43:43,452 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 15:43:43,452 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_user3'
+2025-08-18 15:43:43,453 wd [DEBUG] [BusinessService.cc:process:Setting for test_user3: 6Wz9YTYw
+2025-08-18 15:43:43,453 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=-1873220736, length=32572
+2025-08-18 15:43:43,453 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 4, length= 24
+2025-08-18 15:43:43,453 wd [INFO] [BusinessService.cc:process:Login successful
+2025-08-18 15:43:43,453 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->47.111.20.8:44138 has closed.
+
+2025-08-18 15:45:00,009 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 15:45:00,009 wd [INFO] Server starting
+2025-08-18 15:45:00,009 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 15:45:00,012 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 15:45:00,016 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 15:45:00,016 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 15:45:00,017 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 15:45:03,116 wd [INFO] [SmartHomeMonitorServer.cc:onConnection:tcp tcp172.20.37.90:8888->47.111.20.8:35820 has connected.
+
+2025-08-18 15:45:03,116 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=1492032384, length=32529
+2025-08-18 15:45:03,116 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 10, length= 10
+2025-08-18 15:45:03,116 wd [INFO] [UserRegistrationService.cc:UserRegistrationService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 15:45:03,116 wd [INFO] [UserRegistrationService.cc:handleStage1:Registration Stage1 started for: test_user3
+2025-08-18 15:45:03,116 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 15:45:03,117 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 15:45:03,117 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT id FROM users WHERE name = 'test_user3'
+2025-08-18 15:45:03,118 wd [WARN] [UserRegistrationService.cc:handleStage1:Username already exists: test_user3
+2025-08-18 15:45:03,118 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=1492032384, length=32529
+2025-08-18 15:45:03,118 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 13, length= 34
+2025-08-18 15:45:03,118 wd [INFO] [UserRegistrationService.cc:handleStage2:Registration Stage2 started for: test_user3
+2025-08-18 15:45:03,118 wd [ERROR] [UserRegistrationService.cc:handleStage2:Salt not found for user: test_user3
+2025-08-18 15:45:03,119 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=1492032384, length=32529
+2025-08-18 15:45:03,119 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 1, length= 10
+2025-08-18 15:45:03,119 wd [INFO] [UserLoginService.cc:UserloginService:Database config: host=localhost, port=3306, user=user, db=smart_home
+2025-08-18 15:45:03,119 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 15:45:03,119 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 15:45:03,120 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: SELECT setting, encrypt FROM users WHERE name = 'test_user3'
+2025-08-18 15:45:03,120 wd [DEBUG] [BusinessService.cc:process:Setting for test_user3: 6Wz9YTYw
+2025-08-18 15:45:03,120 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type=1492032384, length=32529
+2025-08-18 15:45:03,120 wd [DEBUG] [SocketIO.cc:readPacket:Raw packet: type= 4, length= 23
+2025-08-18 15:45:03,121 wd [WARN] [BusinessService.cc:process:Password mismatch
+2025-08-18 15:45:03,121 wd [INFO] [SmartHomeMonitorServer.cc:onClose:tcp tcp172.20.37.90:8888->47.111.20.8:35820 has closed.
+
+2025-08-18 15:48:01,107 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 15:48:01,107 wd [INFO] Server starting
+2025-08-18 15:48:01,107 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 15:48:01,109 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 15:48:01,111 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 15:48:01,111 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 15:48:01,112 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 15:51:04,790 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 15:51:04,790 wd [INFO] Server starting
+2025-08-18 15:51:04,790 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 15:51:04,791 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 15:51:04,794 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 15:51:04,794 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 15:51:04,795 wd [INFO] [main.cc:main:Starting server components...
+2025-08-18 16:01:25,519 wd [INFO] [main.cc:main:Server starting...
+2025-08-18 16:01:25,519 wd [INFO] Server starting
+2025-08-18 16:01:25,519 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-18 16:01:25,521 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-18 16:01:25,523 wd [INFO] [MySQLClient.cc:connect:Database connected successfully
+2025-08-18 16:01:25,523 wd [DEBUG] [MySQLClient.cc:readOperation:Executing read operation: 
+            SELECT TABLE_NAME 
+            FROM INFORMATION_SCHEMA.TABLES 
+            WHERE TABLE_SCHEMA = DATABASE()
+            AND TABLE_NAME = 'users'
+        
+2025-08-18 16:01:25,524 wd [INFO] [main.cc:main:Starting server components...
+2025-08-20 12:37:37,269 wd [INFO] [main.cc:main:Server starting...
+2025-08-20 12:37:37,269 wd [INFO] Server starting
+2025-08-20 12:37:37,269 wd [INFO] [main.cc:main:Server config: port=8888, ip=0.0.0.0, threadNum=4, taskSize=100
+2025-08-20 12:37:37,272 wd [DEBUG] [MySQLClient.cc:connect:Connecting to database: user@localhost:3306/smart_home
+2025-08-20 12:37:37,280 wd [ERROR] [MySQLClient.cc:connect:Database connection failed: (1045) Access denied for user 'user'@'localhost' (using password: YES)
+2025-08-20 12:37:37,280 wd [INFO] [main.cc:main:Starting server components...
